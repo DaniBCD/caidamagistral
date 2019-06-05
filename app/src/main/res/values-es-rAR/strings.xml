@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Caida Magistral</string>
+    <string name="localizacion">Localización</string>
+    <string-array name="localizaciones">
+        <item>Villorrio Vivaracho</item>
+        <item>Elevación Escarchada</item>
+        <item>Pico Polar</item>
+        <item>Aterrizaje Afortunado</item>
+        <item>Oasis Ostentoso</item>
+        <item>Latifundio Letal</item>
+        <item>Túneles Tortuosos</item>
+        <item>Señorío de la Sal</item>
+        <item>Ribera Repipi</item>
+        <item>Neopicados</item>
+        <item>Centro Comercial Colosal</item>
+        <item>Soto Solitario</item>
+        <item>Socavón Soterrado</item>
+        <item>Balsa Botín</item>
+        <item>Parque Placentero</item>
+        <item>Lomas Lúgubres</item>
+        <item>Escalones Estivales</item>
+        <item>Albufera Apacible</item>
+        <item>El Bloque</item>
+        <item>Chiringuito Chatarra</item>
+        <item>Planta de Presión</item>
+    </string-array>
+    <string name="retry">retry</string>
+    <string name="share">share</string>
+    <string name="random">random</string>
+    <string name="compartir">"Vamos a caer en "</string>
+    <string name="textShare">Comparte la localización...</string>
+    <string name="estad_sticas">Estadísticas</string>
+    <string name="usuario">Usuario de Epic Games</string>
+    <string name="squad">SQUAD</string>
+    <string name="duo">DUO</string>
+    <string name="solo">SOLO</string>
+    <string name="error_user">Ups, no se ha encontrado el usuario</string>
+    <string name="error_internet">Parece que no estás conectado a internet</string>
+    <string name="error_solicitud">Error al procesar la solicitud, intentalo de nuevo</string>
+    <string name="victorias">VICTORIAS</string>
+    <string name="partidas">PARTIDAS</string>
+    <string name="puntos">PUNTOS</string>
+    <string name="minutos">MINUTOS</string>
+    <string name="jugadores_nsobrevividos">"   JUGADORES\n SOBREVIVIDOS"</string>
+    <string name="stats">*Las estadísticas de minutos y jugadores sobrevividos pueden no ser correctas*</string>
+    <string name="destacados">Destacados</string>
+    <string name="diario">Diario</string>
+    <string name="tienda_diaria">Tienda Diaria</string>
+    <string name="noAppRating">No, gracias</string>
+    <string name="tardeAppRating">Recordarme más tarde</string>
+    <string name="siAppRating">"Puntúa "</string>
+    <string name="textAR1">Si te gusta</string>
+    <string name="textAR2">, por favor pierde un minuto en puntuarla. Gracias!</string>
+</resources>

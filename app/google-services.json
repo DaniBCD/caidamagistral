@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "618837732783",
+    "firebase_url": "https://caida-magistral.firebaseio.com",
+    "project_id": "caida-magistral",
+    "storage_bucket": "caida-magistral.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618837732783:android:028454665c3ee619",
+        "android_client_info": {
+          "package_name": "com.galan.app.caidamagistral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618837732783-jtq59jkofelcsa0vt7q774v8r97inku8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArT-aqu5JdiqQL2GPEo_3DvtesHXbf8Vw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

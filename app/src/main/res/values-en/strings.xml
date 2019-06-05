@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Drop Royale</string>
+    <string name="localizacion">Location</string>
+    <string name="retry">retry</string>
+    <string name="share">share</string>
+    <string name="random">random</string>
+    <string name="compartir">"We are going "</string>
+    <string-array name="localizaciones">
+        <item>Happy Hamlet</item>
+        <item>Frosty Flights</item>
+        <item>Polar Peak</item>
+        <item>Lucky Landing</item>
+        <item>Paradise Palms</item>
+        <item>Fatal Fields</item>
+        <item>Shifty Shafts</item>
+        <item>Salty Springs</item>
+        <item>Snobby Shores</item>
+        <item>Neo Tilted</item>
+        <item>Mega Mall</item>
+        <item>Lonely Lodge</item>
+        <item>Dusty Divot</item>
+        <item>Loot Lake</item>
+        <item>Pleasant Park</item>
+        <item>Haunted Hills</item>
+        <item>Sunny Steps</item>
+        <item>Lazy Lagoon</item>
+        <item>The Block</item>
+        <item>Junk Junction</item>
+        <item>Pressure Plant</item>
+    </string-array>
+    <string name="textShare">Share with your squad</string>
+    <string name="estad_sticas">Stats</string>
+    <string name="usuario">Epic Games user</string>
+    <string name="squad">SQUAD</string>
+    <string name="duo">DUO</string>
+    <string name="solo">SOLO</string>
+    <string name="error_user">Oops... user not found</string>
+    <string name="error_internet">Check your Internet connection and try again</string>
+    <string name="error_solicitud">Error retrieving data, please try again</string>
+    <string name="victorias">VICTORIES</string>
+    <string name="partidas">MATCHES</string>
+    <string name="puntos">SCORE</string>
+    <string name="minutos">MINUTES</string>
+    <string name="jugadores_nsobrevividos">"   PLAYERS\n OUTLIVED"</string>
+    <string name="stats">*Minutes and players outlived statistics may be wrong*</string>
+    <string name="destacados">Featured</string>
+    <string name="diario">Daily</string>
+    <string name="tienda_diaria">Item Shop</string>
+    <string name="noAppRating">No, thanks</string>
+    <string name="tardeAppRating">Remind me later</string>
+    <string name="siAppRating">"Rate "</string>
+    <string name="textAR1">"If you enjoy using "</string>
+    <string name="textAR2">, please take a moment to rate it. Thanks for your support!</string>
+</resources>
