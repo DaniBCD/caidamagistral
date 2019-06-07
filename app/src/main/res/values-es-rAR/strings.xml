@@ -47,9 +47,5 @@
     <string name="destacados">Destacados</string>
     <string name="diario">Diario</string>
     <string name="tienda_diaria">Tienda Diaria</string>
-    <string name="noAppRating">No, gracias</string>
-    <string name="tardeAppRating">Recordarme más tarde</string>
-    <string name="siAppRating">"Puntúa "</string>
-    <string name="textAR1">Si te gusta</string>
-    <string name="textAR2">, por favor pierde un minuto en puntuarla. Gracias!</string>
+    <string name="nuevoTienda">NUEVO</string>
 </resources>

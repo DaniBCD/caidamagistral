@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageView
+    <com.lid.lib.LabelImageView
         android:id="@+id/imageItem"
         android:layout_width="125dp"
         android:layout_height="125dp"

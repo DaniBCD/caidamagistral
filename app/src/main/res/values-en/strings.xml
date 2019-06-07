@@ -47,9 +47,5 @@
     <string name="destacados">Featured</string>
     <string name="diario">Daily</string>
     <string name="tienda_diaria">Item Shop</string>
-    <string name="noAppRating">No, thanks</string>
-    <string name="tardeAppRating">Remind me later</string>
-    <string name="siAppRating">"Rate "</string>
-    <string name="textAR1">"If you enjoy using "</string>
-    <string name="textAR2">, please take a moment to rate it. Thanks for your support!</string>
+    <string name="nuevoTienda">NEW</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.galan.app.caidamagistral.activities;
 
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import com.galan.app.caidamagistral.model.ShopItem;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.lid.lib.LabelImageView;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.Picasso;
 
@@ -154,6 +156,8 @@ public class StoreActivity extends AppCompatActivity {
                             destacado.setNombre(images.getString("name"));
                             destacado.setPrecio(store.getString("cost"));
                             destacado.setImagen(image.getString("background"));
+                            destacado.setNuevo(store.getBoolean("isNew"));
+                            destacado.setNumeroVeces(store.getInt("occurrences"));
 
                             shopDestacados.add(destacado);
                         }else{
@@ -164,6 +168,8 @@ public class StoreActivity extends AppCompatActivity {
                             diario.setNombre(images.getString("name"));
                             diario.setPrecio(store.getString("cost"));
                             diario.setImagen(image.getString("background"));
+                            diario.setNuevo(store.getBoolean("isNew"));
+                            diario.setNumeroVeces(store.getInt("occurrences"));
 
                             shopDiario.add(diario);
                         }
@@ -181,13 +187,19 @@ public class StoreActivity extends AppCompatActivity {
 
                     TextView text = view.findViewById(R.id.textItem);
                     TextView precio = view.findViewById(R.id.textPrecio);
-                    ImageView image = view.findViewById(R.id.imageItem);
+                    LabelImageView image = view.findViewById(R.id.imageItem);
 
                     text.setTypeface(TF);
                     text.setText(item.getNombre());
                     precio.setTypeface(TF);
                     precio.setText(item.getPrecio());
-                    //image.setImageResource(R.drawable.ic_launcher);
+
+                    if(item.isNuevo()){
+                        image.setLabelText(getResources().getString(R.string.nuevoTienda));
+                        image.setLabelBackgroundColor(Color.parseColor("#f3af19"));
+                        image.setLabelBackgroundAlpha(80);
+                    }
+
                     Picasso.get()
                             .load(item.getImagen())
                             .resize(150, 150)
@@ -204,13 +216,19 @@ public class StoreActivity extends AppCompatActivity {
 
                     TextView text = view.findViewById(R.id.textItem);
                     TextView precio = view.findViewById(R.id.textPrecio);
-                    ImageView image = view.findViewById(R.id.imageItem);
+                    LabelImageView image = view.findViewById(R.id.imageItem);
 
                     text.setTypeface(TF);
                     text.setText(item.getNombre());
                     precio.setTypeface(TF);
                     precio.setText(item.getPrecio());
-                    //image.setImageResource(R.drawable.ic_launcher);
+
+                    if(item.isNuevo()){
+                        image.setLabelText(getResources().getString(R.string.nuevoTienda));
+                        image.setLabelBackgroundColor(Color.parseColor("#f3af19"));
+                        image.setLabelBackgroundAlpha(80);
+                    }
+
                     Picasso.get()
                             .load(item.getImagen())
                             .resize(150, 150)

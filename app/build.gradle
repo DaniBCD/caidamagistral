@@ -56,6 +56,7 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.hotchemi:android-rate:1.0.1'
+    implementation 'com.github.linger1216:labelview:v1.1.2'
 }
 
 apply plugin: 'com.google.gms.google-services'
