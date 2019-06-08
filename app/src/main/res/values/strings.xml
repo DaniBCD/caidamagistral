@@ -40,7 +40,7 @@
     <string name="victorias">VICTORIAS</string>
     <string name="partidas">PARTIDAS</string>
     <string name="puntos">PUNTOS</string>
-    <string name="minutos">MINUTES</string>
+    <string name="minutos">MINUTOS</string>
     <string name="jugadores_nsobrevividos">"   JUGADORES\n SOBREVIVIDOS"</string>
     <string name="stats">*Las estadísticas de minutos y jugadores sobrevividos pueden no ser correctas*</string>
     <string name="destacados">Destacados</string>

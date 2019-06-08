@@ -8,13 +8,14 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.astritveliu.boom.Boom;
 import com.galan.app.caidamagistral.BuildConfig;
 import com.galan.app.caidamagistral.R;
 import com.google.android.gms.ads.AdListener;
@@ -49,6 +50,9 @@ public class ResultActivity extends Activity {
         mapa = findViewById(R.id.mapa);
         retry = findViewById(R.id.retrybutton);
         share = findViewById(R.id.sharebutton);
+
+        new Boom(retry);
+        new Boom(share);
 
         MobileAds.initialize(this, "ca-app-pub-6138983841028001~6606303317");
         mAdView = findViewById(R.id.adView);

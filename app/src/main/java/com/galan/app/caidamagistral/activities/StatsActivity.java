@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.TabItem;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+import com.astritveliu.boom.Boom;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -73,6 +75,8 @@ public class StatsActivity extends AppCompatActivity {
         tabSquad = findViewById(R.id.tabsquad);
         viewPager = (ViewPager) findViewById(R.id.pager);
         mAdView = findViewById(R.id.adView);
+
+        new Boom(buscar);
 
         pageAdapter = new PageAdapter(getSupportFragmentManager(), 3);
 

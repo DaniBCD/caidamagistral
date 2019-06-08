@@ -4,12 +4,11 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.HorizontalScrollView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -196,7 +195,7 @@ public class StoreActivity extends AppCompatActivity {
 
                     if(item.isNuevo()){
                         image.setLabelText(getResources().getString(R.string.nuevoTienda));
-                        image.setLabelBackgroundColor(Color.parseColor("#f3af19"));
+                        image.setLabelBackgroundColor(Color.parseColor("#ffffff"));
                         image.setLabelBackgroundAlpha(80);
                     }
 
@@ -225,7 +224,7 @@ public class StoreActivity extends AppCompatActivity {
 
                     if(item.isNuevo()){
                         image.setLabelText(getResources().getString(R.string.nuevoTienda));
-                        image.setLabelBackgroundColor(Color.parseColor("#f3af19"));
+                        image.setLabelBackgroundColor(Color.parseColor("#ffffff"));
                         image.setLabelBackgroundAlpha(80);
                     }
 
