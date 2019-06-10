@@ -179,7 +179,6 @@ public class MainActivity extends AppCompatActivity {
                 },1500+(new Random().nextInt(3000)));
             }
         });
-
     }
 
 }
