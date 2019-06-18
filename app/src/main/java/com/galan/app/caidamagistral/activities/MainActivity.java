@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
-import com.astritveliu.boom.Boom;
 import com.galan.app.caidamagistral.R;
+import com.galan.app.caidamagistral.model.MyBounceInterpolator;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -28,11 +30,14 @@ public class MainActivity extends AppCompatActivity {
     Handler handler;
     private AdView mAdView;
     final int numero = new Random().nextInt(21);
+    MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
 
         mapa = findViewById(R.id.mapa);
         boton = findViewById(R.id.button);
@@ -40,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
         botonStore = findViewById(R.id.buttonStore);
         mAdView = findViewById(R.id.adView);
 
-        new Boom(boton);
-        new Boom(botonStats);
-        new Boom(botonStore);
         /*privacy = findViewById(R.id.textView3);
 
         privacy.setText(
@@ -77,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
         botonStats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                myAnim.setInterpolator(interpolator);
+                botonStats.startAnimation(myAnim);
                 Intent intent=new Intent(MainActivity.this, StatsActivity.class);
                 startActivity(intent);
             }
@@ -85,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
         botonStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                myAnim.setInterpolator(interpolator);
+                botonStore.startAnimation(myAnim);
                 Intent intent=new Intent(MainActivity.this, StoreActivity.class);
                 startActivity(intent);
             }
@@ -93,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                myAnim.setInterpolator(interpolator);
+                boton.startAnimation(myAnim);
                 mapa.setImageResource(R.drawable.anim_min);
 
                 handler=new Handler();
