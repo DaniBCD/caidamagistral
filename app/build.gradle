@@ -21,8 +21,8 @@ android {
         applicationId "com.galan.app.caidamagistral"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 10
-        versionName "3.1.1"
+        versionCode 11
+        versionName "3.1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
                 onesignal_app_id               : 'f1faecc2-f5fe-491f-9a5b-3b9632254bba',
@@ -50,14 +50,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.google.android.gms:play-services-ads:17.2.1'
-    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.android.gms:play-services-ads:18.1.0'
+    implementation 'com.google.firebase:firebase-core:17.0.1'
     implementation 'com.onesignal:OneSignal:3.10.6'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.hotchemi:android-rate:1.0.1'
-    implementation 'com.github.linger1216:labelview:v1.1.2'
 }
 
 apply plugin: 'com.google.gms.google-services'

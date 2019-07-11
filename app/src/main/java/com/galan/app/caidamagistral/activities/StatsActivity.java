@@ -5,7 +5,6 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import com.galan.app.caidamagistral.model.MyBounceInterpolator;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
@@ -14,8 +13,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -60,14 +57,11 @@ public class StatsActivity extends AppCompatActivity {
     Typeface TF;
     PageAdapter pageAdapter;
     private AdView mAdView;
-    MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stats);
-
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
 
         textStats = findViewById(R.id.textStats);
         progressBar = findViewById(R.id.progressBar);
@@ -141,8 +135,6 @@ public class StatsActivity extends AppCompatActivity {
         buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myAnim.setInterpolator(interpolator);
-                buscar.startAnimation(myAnim);
                 hideKeyboard(StatsActivity.this);
                 user = usuario.getText().toString().trim();
                 new getPlayerId().execute();

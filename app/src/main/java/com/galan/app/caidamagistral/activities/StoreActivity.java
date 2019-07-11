@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -186,17 +187,19 @@ public class StoreActivity extends AppCompatActivity {
 
                     TextView text = view.findViewById(R.id.textItem);
                     TextView precio = view.findViewById(R.id.textPrecio);
-                    LabelImageView image = view.findViewById(R.id.imageItem);
+                    ImageView image = view.findViewById(R.id.imageItem);
+                    ImageView imageLabel = view.findViewById(R.id.imageLabel);
 
                     text.setTypeface(TF);
                     text.setText(item.getNombre());
                     precio.setTypeface(TF);
                     precio.setText(item.getPrecio());
 
-                    if(item.isNuevo()){
-                        image.setLabelText(getResources().getString(R.string.nuevoTienda));
-                        image.setLabelBackgroundColor(Color.parseColor("#ffffff"));
-                        image.setLabelBackgroundAlpha(80);
+                    if(!item.isNuevo()){
+                        imageLabel.setVisibility(View.INVISIBLE);
+                        //image.setLabelText(getResources().getString(R.string.nuevoTienda));
+                        //image.setLabelBackgroundColor(Color.parseColor("#ffffff"));
+                        //image.setLabelBackgroundAlpha(80);
                     }
 
                     Picasso.get()
@@ -215,17 +218,19 @@ public class StoreActivity extends AppCompatActivity {
 
                     TextView text = view.findViewById(R.id.textItem);
                     TextView precio = view.findViewById(R.id.textPrecio);
-                    LabelImageView image = view.findViewById(R.id.imageItem);
+                    ImageView image = view.findViewById(R.id.imageItem);
+                    ImageView imageLabel = view.findViewById(R.id.imageLabel);
 
                     text.setTypeface(TF);
                     text.setText(item.getNombre());
                     precio.setTypeface(TF);
                     precio.setText(item.getPrecio());
 
-                    if(item.isNuevo()){
-                        image.setLabelText(getResources().getString(R.string.nuevoTienda));
-                        image.setLabelBackgroundColor(Color.parseColor("#ffffff"));
-                        image.setLabelBackgroundAlpha(80);
+                    if(!item.isNuevo()){
+                        imageLabel.setVisibility(View.INVISIBLE);
+                        //image.setLabelText(getResources().getString(R.string.nuevoTienda));
+                        //image.setLabelBackgroundColor(Color.parseColor("#ffffff"));
+                        //image.setLabelBackgroundAlpha(80);
                     }
 
                     Picasso.get()

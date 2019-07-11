@@ -11,15 +11,12 @@ import android.os.Bundle;
 import androidx.core.content.FileProvider;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.galan.app.caidamagistral.BuildConfig;
 import com.galan.app.caidamagistral.R;
-import com.galan.app.caidamagistral.model.MyBounceInterpolator;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -43,13 +40,10 @@ public class ResultActivity extends Activity {
     Bitmap bm;
     OutputStream os;
     Resources res;
-    MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result);
-
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
 
         resultado = findViewById(R.id.textView);
         mapa = findViewById(R.id.mapa);
@@ -191,8 +185,6 @@ public class ResultActivity extends Activity {
         retry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myAnim.setInterpolator(interpolator);
-                retry.startAnimation(myAnim);
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
@@ -205,8 +197,6 @@ public class ResultActivity extends Activity {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myAnim.setInterpolator(interpolator);
-                share.startAnimation(myAnim);
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
