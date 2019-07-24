@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/expandedListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="viewStart"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/textDificultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="TextView"
+            android:textColor="#F3A83B"
+            android:textSize="20dp"
+            android:textAlignment="viewStart"/>
+
+        <TextView
+            android:id="@+id/textProgreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textEstrellas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40"
+            android:text="TextView"
+            android:textColor="#F3A83B"
+            android:textAlignment="viewEnd"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageStars"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight=".10"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/stars"/>
+    </LinearLayout>
+
+</LinearLayout>

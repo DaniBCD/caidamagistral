@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     GifImageView mapa;
     //TextView privacy;
-    ImageButton boton, botonStats, botonStore;
+    ImageButton boton, botonStats, botonStore, botonChallenges;
     Handler handler;
     private AdView mAdView;
     final int numero = new Random().nextInt(21);
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         boton = findViewById(R.id.button);
         botonStats = findViewById(R.id.buttonStats);
         botonStore = findViewById(R.id.buttonStore);
+        botonChallenges = findViewById(R.id.buttonChallenges);
         mAdView = findViewById(R.id.adView);
 
         /*privacy = findViewById(R.id.textView3);
@@ -82,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, StoreActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        botonChallenges.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, ChallengesActivity.class);
                 startActivity(intent);
             }
         });

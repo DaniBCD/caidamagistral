@@ -48,4 +48,6 @@
     <string name="diario">Daily</string>
     <string name="tienda_diaria">Item Shop</string>
     <string name="nuevoTienda">NEW</string>
+    <string name="desafios">Weekly Challenges</string>
+    <string name="semana">"Week "</string>
 </resources>

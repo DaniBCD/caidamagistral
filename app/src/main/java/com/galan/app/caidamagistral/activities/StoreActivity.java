@@ -1,6 +1,5 @@
 package com.galan.app.caidamagistral.activities;
 
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -19,7 +18,6 @@ import com.galan.app.caidamagistral.model.ShopItem;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.lid.lib.LabelImageView;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.Picasso;
 
